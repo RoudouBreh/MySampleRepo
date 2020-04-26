@@ -13,8 +13,13 @@ int main() {
     int a;
     
     std::cout<< "Quel entier ?" << std::endl;
-    
     std::cin>>a;
+    
+    while(a < 0)
+    {
+        std::cout<< "Votre entier n'est pas bon, veuillez ressaisir svp" << std::endl;
+        std::cin>> a;
+    }
     
     std::cout<< "je fais des mofis inchallah ca marche" << std::endl;
     
